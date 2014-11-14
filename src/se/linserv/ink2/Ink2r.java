@@ -49,7 +49,13 @@ public class Ink2r {
         
         File f = new File(dataFileName);  
       System.out.println(f.getAbsolutePath()); 
-
+      
+      /*
+       * The file should be put in the /WEB-INF folder. Today I't depends on where
+       * The server is started. /usr/share/tomcat in a CentosInstall.
+       */
+    //  ServletContext context = getContext();
+    //  InputStream resourceContent = context.getResourceAsStream("/WEB-INF/test/foo.txt");
                 
         /**
          * Creating a buffered reader to read the file with character encoding "UTF8" 
